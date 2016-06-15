@@ -180,9 +180,11 @@ exports.authorization = [
       return done(null, client, redirectURI);
     });
   }),
-  function(req, res){
-    res.render('dialog', { transactionID: req.oauth2.transactionID, user: req.user, client: req.oauth2.client });
-  }
+  // function(req, res){
+  //   res.render('dialog', { transactionID: req.oauth2.transactionID, user: req.user, client: req.oauth2.client });
+  // }
+  //directly goto next middleware, ranther than render dialog.@auth: fake.lee
+  server.decision()
 ]
 
 // user decision endpoint

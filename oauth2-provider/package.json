@@ -2,7 +2,8 @@
   "name": "oauth2orize-provider",
   "version": "0.0.0",
   "scripts": {
-    "start": "node ./app.js"
+    "start": "node ./app.js",
+    "debug": "node --debug-brk ./app.js"
   },
   "dependencies": {
     "express": "2.x.x",
