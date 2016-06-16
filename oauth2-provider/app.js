@@ -8,6 +8,7 @@ var express = require('express')
   , user = require('./user')
   , client = require('./client')
   , util = require('util')
+  , path = require('path')
   
   
 // Express configuration
@@ -18,6 +19,7 @@ app.use(express.logger());
 app.use(express.cookieParser());
 app.use(express.bodyParser());
 app.use(express.session({ secret: 'keyboard cat' }));
+app.use(express.static(path.join(__dirname, 'static'), {etag: false}));
 /*
 app.use(function(req, res, next) {
   console.log('-- session --');

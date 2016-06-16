@@ -1,0 +1,43 @@
+.row-analysis {
+  margin-bottom: 60px;
+}
+
+.col-function-nav {
+  background-color: #2679b5;
+}
+
+.col-function-div {
+  margin:10px 10px 10px 10px;
+  color:white;
+}
+.col-function-div2 {
+  margin:0px 10px 0px 10px;
+}
+.row-function-app {
+  display:block;
+}
+.row-function-list {
+  display:none;
+  padding-left:12px;
+  padding-right:12px
+}
+
+#func-btn-list {
+  font-size:23px;
+  margin-left:10px;
+  top:5px
+}
+
+#func-btn-app {
+  font-size:23px;
+  margin-left:10px;
+  top:5px;
+  display: none;
+}
+
+.btn-addParam {
+  float:right;
+  margin-right:20px;
+  margin-left:20px;
+}
+
