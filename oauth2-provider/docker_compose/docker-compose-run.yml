@@ -1,0 +1,7 @@
+oauth2-provider:
+  image: oauth2-provider
+  environment: 
+    NODE_EVN: "production"
+  ports: 
+    - "3000:3000"
+  command: pm2 start --interpreter node ./app.js --no-daemon
